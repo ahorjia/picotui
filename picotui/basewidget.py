@@ -105,8 +105,8 @@ class ChoiceWidget(EditableWidget):
 # Widget with few internal selectable items
 class ItemSelWidget(ChoiceWidget):
 
-    def __init__(self, items):
-        super().__init__(0)
+    def __init__(self, items, choice=0):
+        super().__init__(choice)
         self.items = items
 
     def move_sel(self, direction):

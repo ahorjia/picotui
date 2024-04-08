@@ -252,8 +252,8 @@ class WCheckbox(ChoiceWidget):
 
 class WRadioButton(ItemSelWidget):
 
-    def __init__(self, items):
-        super().__init__(items)
+    def __init__(self, items, choice=0):
+        super().__init__(items, choice)
         self.h = len(items)
         self.w = 4 + self.longest(items)
         self.focus = False
